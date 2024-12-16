@@ -24,7 +24,37 @@
         <!-- Button to get current location weather -->
         <button id="getLocationBtn" class="w-full bg-blue-500 text-white p-2 rounded mb-4">Get Current Location Weather</button>
         
-        
+        <!-- Dropdown for recently searched cities -->
+        <div>
+            <label for="recentCities" class="block mb-2 text-sm font-medium text-gray-700">Recently Searched Cities</label>
+            <select id="recentCities" class="w-full p-2 border rounded">
+                <option value="" disabled selected>Select a city</option>
+            </select>
+        </div>
+
+        <!-- Display Weather data -->
+        <div id="weatherData" class="mt-4 hidden">
+            <div class="text-center">
+                <p id="cityName" class="text-xl font-bold"></p>
+                <p id="weatherCondition" class="text-lg text-gray-500"></p>
+                <p id="temp" class="text-4xl font-semibold"></p>
+                <p id="humidity">Humidity: <span id="humidityValue"></span>%</p>
+                <p id="windSpeed">Wind: <span id="windSpeedValue"></span> km/h</p>
+                <img id="weatherIcon" class="w-20 h-20 mx-auto mt-4" src="" alt="">
+            </div>
+        </div>
+
+        <!-- Extended Forecast of 5 days -->
+        <div id="forecastData" class="mt-4 hidden">
+            <h2 class="text-lg text-center font-bold">5-Day Forecast</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4" id="forecastCards"></div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="mt-4 text-center text-red-500 hidden">
+            <p>City not found. Please try again.</p>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
