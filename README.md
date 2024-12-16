@@ -20,6 +20,33 @@ This is a Weather Forecast application built with HTML, CSS (using Tailwind CSS)
 5. OpenWeather API
 
 
+**Setup Instructions**
+1. *Clone the Repository:*
+    https://github.com/WasiuzzamanAnsari/Weather-App-Project-.git
+
+2. *Navigate to the Project Directory.*
+
+3. *Open the Application*
+Open the index.html file in your preferred browser to view and use the application.
+
+
+**Usage Instructions**
+1. *Add a Student:*
+Fill in the details (Name, Student ID, Email, and Contact Number) in the form.
+Click the Add Student button.
+
+2. *View Registered Students:*
+The registered students will appear in a table below the form.
+
+3. *Edit a Student:*
+Click the Edit button in the Actions column of the respective row.
+The student details will populate in the form for editing.
+Make changes and click Add Student to save.
+
+4. *Delete a Student:*
+Click the Delete button in the Actions column of the respective row to remove the student record.
+
+
 **Application Overview**
 1. Weather Search by City Name:
 Users can type the name of a city into the search bar and press the search button.
