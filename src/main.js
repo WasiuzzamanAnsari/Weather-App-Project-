@@ -45,7 +45,7 @@ async function fetchForecast(city) {
 function displayWeather(data) {
     document.getElementById('cityName').innerText = data.name;
     document.getElementById('weatherCondition').innerText = data.weather[0].description;
-    document.getElementById('temp').innerText = parseInt(`${data.main.temp}°C`);
+    document.getElementById('temp').innerText = (`${data.main.temp}°C`);
     document.getElementById('humidityValue').innerText = data.main.humidity;
     document.getElementById('windSpeedValue').innerText = data.wind.speed;
     document.getElementById('weatherIcon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
